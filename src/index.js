@@ -6,6 +6,8 @@ import reportWebVitals from './reportWebVitals';
 import { BrowserRouter } from "react-router-dom";
 import Navbar from './components/Navbar';
 import { GlobalProvider } from './context/GlobalState';
+import BasePage from './components/BasePage';
+import PageRoute from './PageRoute';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -13,7 +15,7 @@ root.render(
   <React.StrictMode>
       <GlobalProvider>
     <BrowserRouter>
-    <Navbar/>
+ <PageRoute/>
     </BrowserRouter>
     </GlobalProvider>
   </React.StrictMode>

@@ -1,11 +1,14 @@
-import React, { useContext } from 'react'
+import React, { useContext, useState } from 'react'
 import { MdChat } from "react-icons/md";
 import {AiFillInstagram} from "react-icons/ai";
 import { GlobalContext } from '../context/GlobalState';
+import Navbar from './Navbar';
+import './HomePage.css'
 function HomePage() {
     const {kızlar}=useContext(GlobalContext)
     return (
      <div className="HomePage">
+        <Navbar/>
         <div class="container">
         <div class="row">
 {kızlar.map((kız)=>{
